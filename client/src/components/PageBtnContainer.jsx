@@ -45,7 +45,7 @@ const PageBtnContainer = () => {
         className="btn next-btn"
         onClick={() => {
           let nextPage = currentPage + 1;
-          if (nextPage > numOfPages) nextPage = 1;
+          if (nextPage > numOfPages) nextPage = numOfPages;
           handlePageChange(nextPage);
         }}
       >
@@ -55,5 +55,4 @@ const PageBtnContainer = () => {
     </Wrapper>
   );
 };
-
 export default PageBtnContainer;
